@@ -256,11 +256,12 @@ header .navbar a:hover {
   margin: 20px;
   padding: 40px;
   text-align: center;
+  /* transition: 1s;  */
 }
-.p-box:hover {
+/* .p-box:hover {
+  transform: scale(1.3);
   background: var(--primary);
-  transition: 0.5s ease;
-}
+} */
 .p-img {
   width: 270px;
   height: 270px;
@@ -268,8 +269,13 @@ header .navbar a:hover {
 .p-img img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 20%;
   border: 4px solid var(--primary);
+  transition: 1s; 
+}
+.p-img img:hover {
+  transform: scale(1.5);
+  background: var(--primary);
 }
 .p-box h2 {
   font-size: var(--h2-font);
@@ -278,6 +284,51 @@ header .navbar a:hover {
 }
 .p-box p {
   font-size: var(--p-font);
+  font-weight: 400;
+}
+.Certifications-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.c-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  background: #2c3e50;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+}
+/* .c-box:hover {
+  background: var(--primary);
+  transition: 0.5s ease;
+} */
+.c-img {
+  width: 270px;
+  height: 270px;
+}
+.c-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  border: 4px solid var(--primary);
+  transition: 1s;
+}
+.c-img img:hover {
+  transform: scale(1.5);
+  background: var(--primary);
+}
+.c-box h2 {
+  font-size: var(--h2-font);
+  font-weight: 600;
+  margin: 10px 0;
+}
+.c-box p {
+  font-size: var(--c-font);
   font-weight: 400;
 }
 .contact-content {
